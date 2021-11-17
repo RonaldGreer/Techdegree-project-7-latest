@@ -6,6 +6,10 @@
 
 /*--MAIN--*/
 
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+}
+
 /*--GRID--*/
 
 .grid-container {
@@ -28,7 +32,7 @@
 
 .main {
     grid-area: main;
-    display: gri
+    display: grid;
 }
 
 /*-------TABLET VIEW--------*/
@@ -39,6 +43,30 @@
         grid-template-areas: 
             "header header"
             "navigation main";
+    }
+
+    .main {
+        grid-template-columns: 50%;
+    }
+
+    .traffic, .social {
+        grid-column: 1 / span 2;
+    }
+
+    .daily, .members, .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile, .activity, .settings {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
     }
 }
 
