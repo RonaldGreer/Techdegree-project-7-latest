@@ -1,4 +1,4 @@
-const alertBanner = document.getElementById("alert");
+/*const alertBanner = document.getElementById("alert");
 
 
 alertBanner.innerHTML =
@@ -44,7 +44,7 @@ let trafficOptions ={
     }
 };
 
-let trafficChart = new CharacterData(trafficCanvas, {
+let trafficChart = new Chart(trafficCanvas, {
     type: 'line',
     data: trafficData,
     options: trafficOptions
@@ -131,3 +131,4 @@ send.addEventListener('click', () => {
     }
 });
 
+*/
