@@ -1,5 +1,7 @@
 /*------MOBILE VIEW-------*/
-
+body {
+    margin: 0;
+}
 /*--HEADER--*/
 
 header {
