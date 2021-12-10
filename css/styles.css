@@ -5,23 +5,104 @@ body {
 /*--HEADER--*/
 
 header {
-    display: inline-flex;
-    justify-content: space-between;
-    background-color: blueviolet;
+    /*display: flex;*/
+    background-color: #8080ff;
+    grid-template-areas: 
+    "title bell picture name";
 }
 
 #webhead {
     font-family: 'Mukta', sans-serif;
+    font-size: 24px;
+    color: white;
+    grid-area: title;   
+    margin-left: 5px;
 }
-
 .user {
     border-radius: 50%;
-    height: 50px
+    height: 50px;
+    grid-area: picture;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.bell {
+    border-right: solid 2px white;
+    padding-right: 18px;
+    grid-area: bell;
+    margin-top: 18px;
+    margin-left: 20px;
+    height: 40px;
+    width: 30px;
+    fill: white;
+}
+
+.myname {
+    grid-area: name;
+    text-align: right;
+    margin-right: 5px;
+    font-family: 'Mukta', sans-serif;
+    color: white;
 }
 
 /*--NAV--*/
 
+nav {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8585ad;
+}
+
+.homesvg {
+    fill: white;
+    height: 30px;
+    width: 35px;
+    padding-left: 18px;
+}
+
+.chartsvg {
+    fill: white;
+    height: 30px;
+    width: 35px;
+}
+
+.memberssvg {
+    fill: white;
+    height: 30px;
+    width: 35px;
+}
+
+.settingssvg {
+    fill: white;
+    height: 30px;
+    width: 35px;
+    padding-right: 18px;
+}
+
 /*--MAIN--*/
+
+.main-header {
+    display: grid;
+    grid-template-areas: 
+    "dashboard tab";
+    grid-template-columns: 40% 60%;
+}
+
+.headline {
+    font-family: 'Mukta', sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    grid-area: dashboard;
+}
+
+.tab {
+    background-color: lightgrey;
+    border-left: solid 1px gray;
+    border-bottom: solid 1px gray;
+    grid-area: tab;
+}
 
 .widget-container-full, .widget-container-half {
     width: 95vw;
