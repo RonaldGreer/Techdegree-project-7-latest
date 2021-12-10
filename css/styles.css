@@ -5,6 +5,7 @@ body {
 /*--HEADER--*/
 
 header {
+    display: grid;
     /*display: flex;*/
     background-color: #8080ff;
     grid-template-areas: 
