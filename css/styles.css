@@ -12,6 +12,16 @@ header {
     "title bell picture name";
 }
 
+.notifications {
+    margin-left: 25px;
+    height: 3px;
+    width: 3px;
+    border-radius: 55%;
+    padding: 2px;
+    color: greenyellow;
+    background-color: greenyellow;
+}
+
 #webhead {
     font-family: 'Mukta', sans-serif;
     font-size: 24px;
