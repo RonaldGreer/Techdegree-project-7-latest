@@ -120,6 +120,7 @@ main {
     margin-left: 10px;
     text-align: center;
     display: inline-block;
+    color: white;
 }
 
 .alert-banner-close {
@@ -149,6 +150,11 @@ hr {
 
 h3 {
     padding-left: 5px;
+}
+
+.daily {
+    padding-bottom: 8px;
+    border-bottom: solid 1px lightgrey;
 }
 
 .social-container {
@@ -358,7 +364,7 @@ main {
         grid-template-columns: 50%;
     }
 
-    .traffic, .members, .activity, .social, .message, .settings {
+    .traffic, .members, .activity, .social, .message, .settings, .dashandalert, .reghr {
         grid-column: 1 / span 2;
     }
 
@@ -456,8 +462,22 @@ main {
         background-color: lightgrey;
         border-left: solid 1px gray;
         border-bottom: solid 1px gray;
-        width: 100%;
         grid-area: tab;
+    }
+
+    .traffic {
+        margin-left: 3px;
+    }
+
+    .daily{
+        margin-left: 5px;
+        padding-bottom: 8px;
+        border: none;
+    }
+
+    .mobile {
+        border-left: solid 1px lightgrey;
+        padding-left: 5px;
     }
 
     .social-image {
@@ -506,6 +526,50 @@ main {
         margin-right: 15px;
         padding-top: 14px;
     }
+
+    hr {
+        width: 100%;
+    }
+
+    .alert-banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 85%;
+        margin-left: 20px;
+        padding-left: 5px;
+        padding-right: 10px;
+        color: white;
+    }
+
+    .alert-banner-close {
+        text-align: right;
+    }
+
+    .message {
+        margin-left: 5px;
+    }
+
+    #userField {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 95%;
+    }
+
+    #messageField {
+        padding-bottom: 50px;
+        width: 95%;
+    }
+
+    #send {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 97%;
+        font-size: 24px;
+    }
+
+    
 
 }
 
