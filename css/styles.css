@@ -272,6 +272,48 @@ h3 {
     grid-area: switch;
 }
 
+#timezone {
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 8px;
+    width: 95%;
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+    border-radius: 10px;
+}
+
+.settings-button {
+    margin-left: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: 
+    "save cancel";
+}
+
+#save {
+    grid-area: save;
+    margin-left: 8px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #8080ff;
+    border-radius: 10px;
+    border: none;
+}
+
+#cancel {
+    grid-area: cancel;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: darkgrey;
+    border-radius: 10px;
+    border: none;
+}
+
 /*--GRID--*/
 
 .grid-container {
