@@ -199,6 +199,14 @@ h3 {
 
 .members-container{
     text-align: center;
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 8px;
+}
+
+.newmembers-container{
+    text-align: center;
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 8px;
 }
 
 .newphoto {
@@ -432,6 +440,17 @@ main {
 
     /*---MAIN---FOR---768---*/
 
+    .traffic-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .traffic-nav {
+        margin-right: 18px;
+    }
+
     .dashandalert {
         display: grid;
         grid-template-areas: 
@@ -499,6 +518,13 @@ main {
         display: grid;
         grid-template-areas: 
         "maininfo dateof";
+    }
+
+    .newmembers-container {
+        display: grid;
+        grid-template-areas: 
+        "maininfo dateof";
+        padding-bottom: 10px;
     }
 
     .maininfo {
@@ -569,13 +595,63 @@ main {
         font-size: 24px;
     }
 
-    
+    .togglegrid {
+        display: grid;
+        grid-template-areas:
+        "label switch";
+        grid-template-columns: /*1fr*/180px 95px;
+    }
+
+    .settings-button {
+        display: grid;
+        grid-template-areas: 
+        "timezone timezone"
+        "save cancel"; 
+        grid-template-columns: 45% 45%;
+        column-gap: 15px;
+    }
+
+    #timezone {
+        grid-area: timezone;
+    }
+
+    #save {
+        grid-area: save;
+    }
+
+    #cancel {
+        grid-area: cancel;
+    }
 
 }
 
 
 
-
-
-
 /*--------DESKTOP VIEW---------*/
+
+@media (min-width: 1024px) {
+    .members, .message {
+        grid-column: 1 / span 1;
+    }
+
+    .activity, .settings {
+        grid-column: 2 / span 1;
+        border-left: solid 1px lightgrey; 
+    }
+
+    .message {
+        padding-right: 8px;
+    }
+
+    #messageField {
+        padding-bottom: 60px;
+        margin-bottom: 12px;
+    }
+
+    .settings {
+        border-left: solid 1px lightgrey;
+    }
+
+
+
+}
