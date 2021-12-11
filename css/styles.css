@@ -48,6 +48,11 @@ header {
     fill: white;
 }
 
+.bell:hover {
+    fill: blue;
+    animation-duration: 3s;
+}
+
 .myname {
     grid-area: name;
     text-align: right;
@@ -647,6 +652,10 @@ main {
     .activity, .settings {
         grid-column: 2 / span 1;
         border-left: solid 1px lightgrey; 
+    }
+
+    .social-container {
+        padding-right: 95px;
     }
 
     .message {

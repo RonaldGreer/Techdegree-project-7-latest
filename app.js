@@ -125,7 +125,7 @@ send.addEventListener('click', () => {
         alert("Please fill out user and message fields before sending");
     } else if (user.value === "" ) {
         alert("Please fill out user field before sending");
-    } else if (user.value === "" ) {
+    } else if (message.value === "" ) {
         alert("Please fill out message field before sending");
     } else {
         alert('Message successfully sent to: ${user.value}');
