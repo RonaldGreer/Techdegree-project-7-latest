@@ -460,6 +460,53 @@ main {
         grid-area: tab;
     }
 
+    .social-image {
+        margin-right: 6px;
+    }
+
+    .allsocials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social-container {
+        padding-right: 20px;
+        padding-left: 15px;
+    }
+
+    .members-container {
+        display: grid;
+        grid-template-areas: 
+        "maininfo dateof";
+    }
+
+    .maininfo {
+        display: flex;
+        flex-direction: row;
+        grid-area: maininfo;
+        margin-left: 8px;
+        /*text-align: left;*/
+    }
+
+    .newphoto {
+        margin-top: 6px;
+    }
+
+    .members-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    .dateofjoin {
+        grid-area: dateof;
+        text-align: right;
+        margin-right: 15px;
+        padding-top: 14px;
+    }
+
 }
 
 
