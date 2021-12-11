@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/toggle-switch.css" />
+    <link rel="stylesheet" href="css/toggle-switch.css.map" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
@@ -198,75 +200,90 @@
             <img class="newphoto" src="images/member-1.jpg">
             <div class="members-text">
                 <p class="theirname">Victoria Chambers</p>
-                <a href="#">victoria.chambers80@example.com</a>
+                <a class="theiremail" href="#">victoria.chambers80@example.com</a>
             </div>
             <p class="dateofjoin">10/15/15</p>
         </div>
+
+        <hr>
 
         <div class="members-container">
             <img class="newphoto" src="images/member-2.jpg">
             <div class="members-text">
                 <p class="theirname">Dale Byrd</p>
-                <a href="#">dale.byrd80@example.com</a>
+                <a class="theiremail" href="#">dale.byrd80@example.com</a>
             </div>
             <p class="dateofjoin">3/25/15</p>
         </div>
+
+        <hr>
 
         <div class="members-container">
             <img class="newphoto" src="images/member-3.jpg">
             <div class="members-text">
                 <p class="theirname">Dawn Wood</p>
-                <a href="#">dawn.wood80@example.com</a>
+                <a class="theiremail" href="#">dawn.wood80@example.com</a>
             </div>
             <p class="dateofjoin">7/3/15</p>
         </div>
+
+        <hr>
 
         <div class="members-container">
             <img class="newphoto" src="images/member-4.jpg">
             <div class="members-text">
                 <p class="theirname">Dan Oliver</p>
-                <a href="#">dan.oliver80@example.com</a>
+                <a class="theiremail" href="#">dan.oliver80@example.com</a>
             </div>
             <p class="dateofjoin">4/28/15</p>
         </div>
 
     </section>
 
+    <hr>
 
     <section class="members">
         <h3>Recent Activity</h3>
 
         <div class="members-container">
-            <img src="images/member-1.jpg">
+            <img class="newphoto" src="images/member-1.jpg">
             <div class="members-text">
-                <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
-                <p>4 hours ago</p>
+                <p class="theirname">Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+                <p class="theirtime">4 hours ago</p>
             </div>
         </div>
 
+        <hr>
+
         <div class="members-container">
-            <img src="images/member-2.jpg">
+            <img class="newphoto" src="images/member-2.jpg">
             <div class="members-text">
-                <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
-                <p>5 hours ago</p>
+                <p class="theirname">Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                <p class="theirtime">5 hours ago</p>
             </div>
         </div>
 
+        <hr>
+
         <div class="members-container">
-            <img src="images/member-3.jpg">
+            <img class="newphoto" src="images/member-3.jpg">
             <div class="members-text">
-                <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
-                <p>5 hours ago</p>
+                <p class="theirname">Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                <p class="theirtime">5 hours ago</p>
             </div>
         </div>
 
+        <hr>
+
         <div class="members-container">
-            <img src="images/member-4.jpg">
+            <img class="newphoto" src="images/member-4.jpg">
             <div class="members-text">
-                <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
-                <p>1 day ago</p>
+                <p class="theirname">Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                <p class="theirtime">1 day ago</p>
             </div>
         </div>
+
+        <hr>
 
     </section>
 
@@ -281,10 +298,44 @@
         </form>
     </section>
 
+    <hr>
 
     <section class="settings">
         <h3>Settings</h3>
 
+        <div class="togglegrid">
+         <p class="toggleswitchdescript">Send Email Notifications </p>
+         <div class="switchitself">
+         <label class="switch-light switch-ios" onclick="">
+              <input type="checkbox">
+            
+              <strong>
+            
+              </strong>
+        
+            <span>
+               <a></a>
+            </span>
+         </label>
+         </div>
+        </div>
+  
+       <div class="togglegrid">
+        <p class="toggleswitchdescript">Set Profile to Public</p>
+        <div class="switchitself">
+        <label class="switch-light switch-ios" onclick="">
+          <input type="checkbox">
+  
+          <strong>
+  
+          </strong>
+        
+          <span>
+            <a></a>
+          </span>
+        </label>
+        </div>
+       </div>
 
         <select class="form-field" id="timezone">
             <option disabled selected>Select a Timezone</option>

@@ -191,12 +191,84 @@ h3 {
     font-size: 34px;
 }
 
-/*
+.members-container{
+    text-align: center;
+}
 
-*/
+.newphoto {
+    border-radius: 50%;
+    height: 70px;
+    width: 75px;
+}
+
+.theirname {
+    margin-bottom: 0px;
+}
+
+.theiremail {
+    margin-bottom: 0px;
+    color: #8080ff;
+}
+
+.dateofjoin {
+    margin-top: 0px;
+}
+
+.theirtime {
+    margin-top: 0px;
+}
 
 .widget-container-full, .widget-container-half {
     width: 95vw;
+}
+
+#userField {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 90%;
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+    border-radius: 10px;
+}
+
+#messageField {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 50px;
+    width: 90%;
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+    border-radius: 10px;
+}
+
+#send {
+    margin-left: 5px;
+    margin-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 95%;
+    color: white;
+    background-color: #8080ff;
+    border: none;
+    border-radius: 10px;
+}
+
+.togglegrid {
+    display: grid;
+    grid-template-areas:
+    "label switch";
+}
+
+.toggleswitchdescript {
+    grid-area: label;
+}
+
+.switchitself {
+    grid-area: switch;
 }
 
 /*--GRID--*/
