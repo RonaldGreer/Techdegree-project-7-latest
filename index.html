@@ -68,7 +68,7 @@
         <div class="traffic-header">
             <h3>Traffic</h3>
             <ul class="traffic-nav">
-                <li class="traffic-nav-link">Hourly</li>
+                <li class="traffic-nav-link" id="selected">Hourly</li>
                 <li class="traffic-nav-link">Daily</li>
                 <li class="traffic-nav-link">Weekly</li>
                 <li class="traffic-nav-link">Monthly</li>
@@ -76,14 +76,46 @@
         </div>
         <div class="widget-container-full">
 
-            <canvas id="traffic-chart">
+            <canvas id="trafficCanvas"><!--"traffic-chart"-->
                 <script src="https://cdn.jsdelivr.net/npm/chart.js">
-                    
+                const config = {
+                 type: 'line',
+                 data: data,
+                  optioms: {}
+                };
+                 const labels = [
+                  '16-22',
+                  '23-29',
+                  '30-5',
+                  '6-12',
+                  '13-19',
+                  '20-26',
+                  '27-3',
+                  '4-10',
+                  '11-17',
+                  '18-24',
+                  '25-31',
+                ];
+                const data = {
+                 labels: labels,
+                 datasets: [{
+                  label: 'My Data',
+                  backgroundColor: 'rgb(255, 99, 132)',
+                  borderColor: 'rgb(255, 99, 132)',
+                  data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500],
+                 }]
+                };
+                var myChart= new Chart(
+                  document.getElementById('traffic-chart'),
+                  config
+                );
                 </script>
             </canvas>
         </div>
 
     </section>
+
+    <hr>
 
     
     <section class="daily">
@@ -96,17 +128,26 @@
     </section>
 
 
+    <hr>
+
+
     <section class="mobile">
         <h3>Mobile Users</h3>
 
         <div class="widget-container-half">
 
-            <canvas id="mobile-chart"></canvas>
+            <canvas id="mobileCanvas"><!--"mobile-chart"-->
+
+            </canvas>
         </div>
     </section>
 
 
+    <hr>
+
+
     <section class="social">
+        <h3 class="socialhead">SOCIAL STATS</h3>
 
         <div class="social-container">
             <div class="social-image">
@@ -115,8 +156,8 @@
                 </svg>
             </div>
             <div class="social-text">
-                <p>Facebook</p>
-                <p>10,320</p>
+                <p class="medianame">Facebook</p>
+                <p class="medianumber">10,320</p>
             </div>
         </div>
 
@@ -127,8 +168,8 @@
                 </svg>
             </div>
             <div class="social-text">
-                <p>Twitter</p>
-                <p>16,445</p>
+                <p class="medianame">Twitter</p>
+                <p class="medianumber">16,445</p>
             </div>
         </div>
 
@@ -139,51 +180,54 @@
               </svg>
             </div>
             <div class="social-text">
-                <p>Instagram</p>
-                <p>22,189</p>
+                <p class="medianame">Instagram</p>
+                <p class="medianumber">22,189</p>
             </div>
         </div>
 
     </section>
 
 
+    <hr>
+
+
     <section class="members">
         <h3>New Members</h3>
 
         <div class="members-container">
-            <img src="images/member-1.jpg">
+            <img class="newphoto" src="images/member-1.jpg">
             <div class="members-text">
-                <p>Victoria Chambers</p>
+                <p class="theirname">Victoria Chambers</p>
                 <a href="#">victoria.chambers80@example.com</a>
             </div>
-            <p>10/15/15</p>
+            <p class="dateofjoin">10/15/15</p>
         </div>
 
         <div class="members-container">
-            <img src="images/member-2.jpg">
+            <img class="newphoto" src="images/member-2.jpg">
             <div class="members-text">
-                <p>Dale Byrd</p>
+                <p class="theirname">Dale Byrd</p>
                 <a href="#">dale.byrd80@example.com</a>
             </div>
-            <p>3/25/15</p>
+            <p class="dateofjoin">3/25/15</p>
         </div>
 
         <div class="members-container">
-            <img src="images/member-3.jpg">
+            <img class="newphoto" src="images/member-3.jpg">
             <div class="members-text">
-                <p>Dawn Wood</p>
+                <p class="theirname">Dawn Wood</p>
                 <a href="#">dawn.wood80@example.com</a>
             </div>
-            <p>7/3/15</p>
+            <p class="dateofjoin">7/3/15</p>
         </div>
 
         <div class="members-container">
-            <img src="images/member-4.jpg">
+            <img class="newphoto" src="images/member-4.jpg">
             <div class="members-text">
-                <p>Dan Oliver</p>
+                <p class="theirname">Dan Oliver</p>
                 <a href="#">dan.oliver80@example.com</a>
             </div>
-            <p>4/28/15</p>
+            <p class="dateofjoin">4/28/15</p>
         </div>
 
     </section>

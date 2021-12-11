@@ -1,11 +1,11 @@
-/*const alertBanner = document.getElementById("alert");
+const alertBanner = document.getElementById("alert");
 
 
 alertBanner.innerHTML =
     `
     <div class="alert-banner">
         <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
-        <p class="alert-banner-close">x</p>
+        <p class="alert-banner-close">X</p>
     </div>
     `
 
@@ -26,7 +26,8 @@ let trafficData = {
 };
 
 let trafficOptions ={
-    backgroundCOlor: 'rgba(112, 104, 201, .5)',
+    //backgroundCOlor: ..
+    backgroundColor: 'rgba(112, 104, 201, .5)',
     fill: true,
     aspectRatio: 2.5,
     animation: {
@@ -75,7 +76,7 @@ const dailyOptions = {
     }
 };
 
-let dailyChart = new CharacterData(dailyCanvas, {
+let dailyChart = new Chart(dailyCanvas, {
     type: 'bar',
     data: dailyData,
     options: dailyOptions
@@ -89,9 +90,9 @@ const mobileData = {
         data: [2000, 550, 500],
         borderWidth: 0,
         backgroundColor: [
-            '7477BF',
+            '#7477BF',
             '#78CF82',
-            '51B6C8'
+            '#51B6C8'
         ]
     }]
 };
@@ -131,4 +132,3 @@ send.addEventListener('click', () => {
     }
 });
 
-*/
