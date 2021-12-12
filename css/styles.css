@@ -46,14 +46,13 @@ header {
     height: 40px;
     width: 30px;
     fill: white;
+    transition: fill 2s;
 }
 
 .bell:hover {
     fill: blue;
-    transition-property: fill, width, height;
+    transition-property: fill;
     transition-delay: 0.2s;
-    width: 32px;
-    height: 42px;
     animation-duration: 3s;
 }
 
